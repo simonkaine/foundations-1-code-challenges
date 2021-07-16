@@ -53,7 +53,8 @@ Output:
 */
 
 export function getAllDairy(arr) {
-    return [];
+    const dairyItems = arr.filter(item => item.category === 'dairy');
+    return dairyItems;
 }
 
 /*
@@ -69,7 +70,8 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    const moreThanTwo = arr.filter(item => item.price > 2 && item.category === 'fruit');
+    return moreThanTwo;
 }
 
 
@@ -84,7 +86,8 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    const foundChz = arr.find(item => item.id === 'cheese')
+    return foundChz;
 }
 
 
